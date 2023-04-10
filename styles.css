@@ -38,7 +38,7 @@ img{
 #navbar {
   background: #333;
   color: #fff;
-  /* overflow: auto; */
+ 
 }
 
 #navbar .container{
@@ -53,10 +53,6 @@ img{
   color: #fff;
 }
 
-/* #navbar ul {
-  display: flex;
-  list-style: none;
-} */
 
 #navbar ul li{
   display: block;
@@ -86,7 +82,7 @@ img{
   position: absolute;
   background-color: #f7c08a;
   min-width: 160px;
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  width: 200px;
   z-index: 1;
   border-radius: 0.5rem;
 }
@@ -99,13 +95,6 @@ img{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #ede8e8;}
-
-
-/* #navbar ul li a:hover, 
-#navbar ul li a.current {
-  background: #444;
-  color: #f7c08a;
-} */
 
 
 /* Utility Classes */
@@ -162,4 +151,9 @@ img{
   background: #444;
   color: #fff;
   padding: 20px;
+}
+
+.figcap {
+  text-align: center;
+  font-size: 0.8rem;
 }
