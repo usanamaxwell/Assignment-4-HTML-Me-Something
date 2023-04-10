@@ -1,1 +1,165 @@
-/* Write your CSS here! */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 8px;
+  display: block;
+}
+
+/* Variables ------------------------------------*/
+:root {
+  --primary-color: #fff;
+  --secondary-color: #333;
+  --third-color:#116c1d;
+}
+
+/* Main Styling */
+html,body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+
+/* Navbar */
+#navbar {
+  background: #333;
+  color: #fff;
+  /* overflow: auto; */
+}
+
+#navbar .container{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem
+}
+
+
+#navbar a {
+  color: #fff;
+}
+
+/* #navbar ul {
+  display: flex;
+  list-style: none;
+} */
+
+#navbar ul li{
+  display: block;
+}
+
+#navbar ul li a {
+  padding: 0.5rem;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: #333;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border-style: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f7c08a;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #d4a372;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #ede8e8;}
+
+
+/* #navbar ul li a:hover, 
+#navbar ul li a.current {
+  background: #444;
+  color: #f7c08a;
+} */
+
+
+/* Utility Classes */
+.container {
+  margin: auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.text-primary {
+  color: #f7c08a;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+#mainHeading{
+  color: red;
+}
+/* Home info */
+.container-info {
+
+  margin: auto;
+  max-width: 1000px;
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+
+.info-left, .info-right{
+  width: 50%;
+}
+
+.info-left{
+  padding: 4rem 0 0
+  
+}
+
+.info-left h1 {
+  padding-bottom: 0.5rem;
+}
+
+.bg-dark {
+  background-color: #fcefe2;
+}
+
+.funParagraph {
+  color: green;
+}
+
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}
