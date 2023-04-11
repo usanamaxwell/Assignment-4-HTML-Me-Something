@@ -12,18 +12,18 @@ body{
 /* Variables ------------------------------------*/
 :root {
   --primary-color: #fff;
-  --secondary-color: #333;
+  --secondary-color: #444;
   --third-color:#116c1d;
 }
 
-/* Main Styling */
+/* Main Styling ----------------------------------*/
 html,body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
 }
 
 a {
-  color: #333;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -34,10 +34,10 @@ img{
 }
 
 
-/* Navbar */
+/* Navbar -----------------------------------------*/
 #navbar {
-  background: #333;
-  color: #fff;
+  background: var(--secondary-color);
+  color: var(--primary-color);
  
 }
 
@@ -48,11 +48,9 @@ img{
   padding: 0.8rem
 }
 
-
 #navbar a {
-  color: #fff;
+  color: var(--primary-color);
 }
-
 
 #navbar ul li{
   display: block;
@@ -63,8 +61,8 @@ img{
 }
 
 .dropbtn {
-  background-color: #fff;
-  color: #333;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 0.6rem;
   font-size: 1rem;
   border-radius: 0.5rem;
@@ -97,7 +95,7 @@ img{
 .dropdown:hover .dropbtn {background-color: #ede8e8;}
 
 
-/* Utility Classes */
+/* Content ------------------------------------------*/
 .container {
   margin: auto;
   max-width: 1000px;
@@ -108,16 +106,11 @@ img{
   color: #f7c08a;
 }
 
-.lead {
-  font-size: 20px;
-}
-
 #mainHeading{
   color: red;
 }
-/* Home info */
-.container-info {
 
+.container-info {
   margin: auto;
   max-width: 1000px;
   display: flex;
@@ -144,16 +137,18 @@ img{
 
 .funParagraph {
   color: green;
-}
-
-#main-footer {
-  text-align: center;
-  background: #444;
-  color: #fff;
-  padding: 20px;
+  text-indent: 10%;
 }
 
 .figcap {
   text-align: center;
   font-size: 0.8rem;
+}
+
+/* Footer -------------------------------------------- */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
 }
